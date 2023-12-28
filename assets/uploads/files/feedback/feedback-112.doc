@@ -1,0 +1,151 @@
+	2021-06-11T-PW.04.02.9A2.06.21.150
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<!-- CSS buatan sendiri -->
+<link rel="stylesheet" href="http://localhost/satupintu/assets/vendor/bootstrap/css/style.css">
+</head>
+
+<body onload="window.print()">
+
+	<div class="page">
+		<!-- formatting date -->
+		
+		<!-- tabel kop surat -->
+		<table style="width:100%">
+			<tr>
+				<!-- nomor surat -->
+				<th class="satu"><p>Nomor	: T-PW.04.02.9A2.06.21.150</p></th>
+				<!-- tanggal pembuatan surat -->
+				<th class="dua"><p>Batam, 11 Juni 2021</p></th> 
+			</tr>
+			<tr>
+				<td><p>Lampiran: </p></td> 
+			</tr>
+			<tr>
+				<td><p>Hal		: Peringatan</p></td>
+			</tr>
+			<tr>
+				<td><p> </p></td>
+			</tr>
+		</table>
+
+		<!--  tabel alamat tujuan -->
+		<br>
+		<table style="width:100%">
+			<tr>
+				<th><p class="satu"><b>Yth.</b></p></th> 
+			</tr>
+			<tr>
+				<td><p><b>Pimpinan / Penanggung Jawab</b></p></td> 
+			</tr>
+			<tr>
+				<td><p><b>nana</b></p></td>
+			</tr>
+			<tr>
+				<td><p><b>di</b></p></td>
+			</tr>
+			<tr>
+				<td><p id="space1"><b> Batam</b></p></td>
+			</tr>
+		</table>
+		<!-- paragraf 1 -->
+		<br>
+		<p class="paragraf">Dalam rangka melindungi masyarakat dari sediaan farmasi (obat, obat tradisional, kosmetik) dan pangan yang Tidak Memenuhi Ketentuan (tanpa izin edar, rusak, kadaluarsa) pada tanggal 18 Juni 2021 
+		dan 20 Juni 2021	
+	telah dilakukan pemeriksaan terhadap sarana:  </p>
+	<!-- paragraf 2 -->
+	<table style="width:100%">
+		<tr>
+			<th class="a"><p class="satu" id="space2">Nama</p></th>
+			<th class="b"><p class="satu">: ABC</p></th>
+		</tr>
+
+		<tr>
+			<td><p id="space2">Alamat</p></td>
+			<td><p>: nana</p></td>
+		</tr>
+
+		<tr>
+			<td><p id="space2">Nama Pemilik </p></td>
+			<td><p>: nana</p></td>
+		</tr>		
+
+	</table>
+	<!-- paragraf 3 -->
+		<br>
+		<p class="paragraf">Ditemukan pelanggaran sebagai berikut: </p>
+		<p class="paragraf"><p class='paragraf'><p></p><ul><li><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+</li><li>
+
+<strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+<br></li><li>
+
+<strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+<br></li></ul>
+
+<p></p></p></p>
+		<!-- paragraf 4 -->
+		<p class="paragraf">Hal ini merupakan pelanggaran terhadap: </p>
+		<p class="paragraf"><ol>
+			<li><p class='paragraf'>Undang-Undang No.18 Tahun 2012  tentang Pangan Pasal 71 ayat (1) : Setiap Orang yang terlibat dalam rantai Pangan wajib mengendalikan risiko bahaya pada Pangan, baik yang berasal dari bahan, peralatan, sarana produksi, maupun dari perseorangan sehingga Keamanan Pangan terjamin.</p></li><li><p class='paragraf'>Undang-Undang No. 8 Tahun 1999  tentang Perlindungan Konsumen Pasal 8 ayat (3) :  Pelaku usaha dilarang memperdagangkan sediaan farmasi dan pangan yang rusak, cacat atau bekas dan tercemar, dengan atau tanpa memberikan informasi secara lengkap dan benar.
+Pasal 62 ayat (1) : Pelaku usaha yang melanggar ketentuan sebagaimana dimaksud dalam Pasal 8, Pasal 9, Pasal 10, Pasal 13 ayat (2), Pasal 15, Pasal 17 ayat (1) huruf a, huruf b, huruf c, huruf e, ayat (2), dan Pasal 18 dipidana dengan pidana penjara paling lama 5 (lima) tahun atau pidana denda paling banyak Rp 2.000.000.000,00 (dua miliar rupiah).
+</p></li><li><p class='paragraf'>Undang-Undang No. 36 Tahun 2009 tentang Kesehatan pasal 111 ayat (2) : 
+Makanan dan minuman hanya dapat diedarkan setelah mendapat izin edar sesuai dengan ketentuan peraturan perundang-undangan
+</p></li><li><p class='paragraf'>Undang-Undang No.18 Tahun 2012  tentang Pangan pasal 91 ayat (1) : 
+1. Pasal 91 ayat (1): Dalam hal pengawasan keamanan, mutu dan gizi, setiap pangan olahan yang dibuat di dalam negeri atau yang diimpor untuk diperdagangkan dalam kemasan eceran, pelaku usaha pangan wajib memiliki izin edar.
+2. Pasal 142 : Pelaku Usaha Pangan yang dengan sengaja tidak memiliki izin edar terhadap setiap Pangan Olahan yang dibuat di dalam negeri atau yang diimpor untuk diperdagangkan dalam kemasan eceran sebagaimana dimaksud dalam Pasal 91 ayat (1) dipidana dengan pidana penjara paling lama 2 (dua) tahun atau denda paling banyak Rp4.000.000.000,00 (empat miliar rupiah). 
+</p></li><li><p class='paragraf'>Peraturan Pemerintah Nomor 28 Tahun 2004  tentang Keamanan Mutu dan Gizi Pangan Pasal 42 ayat (1) : Dalam rangka pengawasan keamanan mutu dan gizi pangan, setiap pangan olahan baik yang diproduksi di dalam atau yang dimasukkan ke dalam wilayah Indonesia untuk diperdagangkan dalam kemasan eceran sebelum diedarkan wajib memiliki surat persetujuan pendaftaran (MD/ML).</p></li>		</ol></p>
+		<!-- paragraf 5 -->
+	<p class="paragraf">Sehubungan dengan hal tersebut, bersama ini kami memberikan sanksi 
+		<b>PERINGATAN</b> kepada Saudara agar: </p>
+		<p id="space1"><ol>
+			<li><p class="paragraf"><b>Tidak</b> memajang / mengedarkan produk pangan tanpa izin edar. </p></li>
+			<li><p class="paragraf">Mentaati peraturan perundangan yang berlaku. </p></li>
+		</ol></p>
+		
+		<!-- paragraf 6 -->
+		<p class="paragraf">Apabila dikemudian hari, ditemukan bahwa Saudara mengabaikan Surat Peringatan ini maka Saudara akan dikenakan sanksi sesuai dengan peraturan perundang-undangan yang berlaku. </p>
+		<br>
+		<p class="paragraf">Demikian disampaikan untuk dilaksanakan.</p>
+		<!-- paragraf 7 -->
+		<br>
+		<table style="width:100%">
+			<tr>
+				<th class="c"><p class="satu" id="hilang">Cobacabicobacabicobacabicobacabi</p></th> 
+				<th class="c"><p class="satu"><b>Kepala Balai Pengawas Obat dan Makanan</b></p></th> 
+			</tr>
+			<tr>
+				<td><p id="hilang">Cobacabicobacabicobacabicobacabi</p></td> 
+				<td><p><b>Di Batam</b></p></td> 
+			</tr>
+			<tr>
+				<td><p id="hilang">Cobacabicobacabicobacabicobacabi</p></td> 
+				<td><p id="hilang">Cobacabicobacabicobacabicobacabi</p></td> 
+			</tr>
+			<tr>
+				<td><p id="hilang">Cobacabicobacabicobacabicobacabi</p></td> 
+				<td><p id="hilang">Cobacabicobacabicobacabicobacabi</p></td> 
+			</tr>
+			<tr>
+				<td><p id="hilang">Cobacabicobacabicobacabicobacabi</p></td> 
+				<td><p id="hilang">Cobacabicobacabicobacabicobacabi</p></td> 
+			</tr>
+			<tr>
+				<td><p id="hilang">Cobacabicobacabicobacabicobacabi</p></td> 
+				<td><p><b>Bagus Heri Purnomo, S.Si., Apt.</b></p></td> 
+			</tr>
+			
+		</table>
+
+		<!-- paragraf 8 -->
+		<br><p class='paragraf'>Tembusan disampaikan Kepada Yth : </p><p class='paragraf'><ol><p class='paragraf'><li>Walikota Batam di - <b>Batam</b></li></p><li>Direktur Pengawasan Pangan Resiko Rendah dan Sedang Badan POM RI di - <b>Jakarta</b></li><p class='paragraf'><li>Kepala Dinas Kesehatan Kota Batam di - <b>Batam</b></li></p><p class='paragraf'><li>Kepala Dinas Perindustrian dan Perdagangan Kota Batam di - <b>Batam</b></li></p><li>Arsip</li></ol></p>	</page>
+</body>
+</html>

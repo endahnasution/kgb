@@ -1,0 +1,5 @@
+---
+deployment:
+tasks:
+- export DEPLOYPATH=/home/u1145293/public_html/e-kgb/
+- /bin/cp -r * $DEPLOYPATH
