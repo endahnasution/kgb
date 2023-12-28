@@ -82,6 +82,8 @@
 
 														<a href="#" data-tooltip="tooltip" title="Hapus" class="btn btn-danger btn-sm" id="hapusPeg" data-id =  "<?=$row->idPegawai ?>" data-toggle="modal" data-target="#hapusPegawai"><i class="fa fa-trash"></i></a>
 
+														<a href="#" data-tooltip="tooltip" title="Reset" class="btn btn-warning btn-sm" id="hapusPeg" data-id =  "<?=$row->idPegawai ?>" data-toggle="modal" data-target="#resetPegawai"><i class="fa fa-forward"></i></a>
+
 													</td>
 
 													<?php 
@@ -204,6 +206,40 @@
 	</div>
 </div>
 
+
+<!-- reset password pegawai -->
+<div id= "resetPegawai" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><i class="icon fa fa-ban"></i> ALert !</h4>
+                </div>
+                <div class="modal-body" id=hapusData>
+                    <form role="form" method="post" action="<?= base_url('admin/Master/reset_password') ?>">
+                        <div class="box-body">
+                            <div class="form-group" style="text-align:center">Anda yakin akan mereset Password Pegawai ini ?</label>
+                                <input type="hidden" id="idPg" name="idPg">
+                              
+                            </div>                        
+                        </div><!-- /.box-body -->
+                        <div class="modal-footer">
+                            <button type="reset" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                            <button type="submit" class="btn btn-warning" name="delete"><i class="fa fa-check"></i> Reset</button>
+                        </div>
+                    </form>             
+                        <script src="<?php echo base_url();?>assets/js/jquery-1.10.0.min.js" type="text/javascript"></script>
+                        <script type="text/javascript" >
+                            $(document).on("click","#hapusPeg",function(){
+                                var id = $(this).data('id');
+                                $("#hapusData #idPg").val(id);
+                            });
+                        </script>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
  <!-- Hapus Pegawai -->
  <div id= "hapusPegawai" class="modal fade" role="dialog">

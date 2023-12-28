@@ -65,6 +65,11 @@ public function getTl(){
   
 }
 
+public function reset_password($data){
+  $this->db->set('password', $data['password']); 
+   $this->db->where('idPegawai', $data['idPegawai']);
+   $query = $this->db->update('tbl_pegawai');
+}
 
 public function hapus_dataPegawai($id){
    $this->db->delete("tbl_pegawai",array("idPegawai"=>$id));

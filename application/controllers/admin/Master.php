@@ -104,6 +104,23 @@ public function hapus_dataPegawai(){
         redirect('admin/Master/data_pegawai');
         }
 
+    public function reset_password(){
+            $data = konfigurasi('Pilih Surat Tugas', 'ap');
+                $id = $this->input->post('idPg');
+                $password = get_hash('password');
+
+
+                $data = array (
+                    'idPegawai' => $id,
+                    'password' => $password
+                );
+
+            
+               $this->Master_model->reset_password($data);
+                redirect('admin/Master/data_pegawai');
+              
+        }
+
 
 
     public function data_sarana()

@@ -60,8 +60,7 @@
                             echo "<td class='dt-center'>" ?>
                             <a href="<?=site_url('admin/pengajuan/edit_pengajuan/'. $row->idKgb)?>" class="btn btn-success btn-sm" data-tooltip="tooltip" title="Edit" id="editSur" ><i class="fa fa-edit"></i></a>
 
-                            <a href="#" data-tooltip="tooltip" title="Hapus" class="btn btn-danger btn-sm" id="hapusSur" data-id="<?= $row->idKgb ?>" data-toggle="modal" data-target="#hapusSurat">
-                              <i class="fa fa-trash"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Hapus" class="btn btn-danger btn-sm" id="hapusPer" data-id="<?= $row->idKgb ?>" data-toggle="modal" data-target="#hapusLhk"><i class="fa fa-trash"></i></a>
 
                             <!-- <a href="#" class="btn btn-info btn-sm" data-tooltip="tooltip" title="Print" id="printSur" data-toggle="modal" data-target="#printSurat" data-id="<?= $row->idKgb ?>">
                               <i class="fa fa-print"></i></a> -->
@@ -285,6 +284,43 @@
     </div>
   </div>
   </div>
+
+
+  <!-- Hapus KGB -->
+  <div id="hapusLhk" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><i class="icon fa fa-ban"></i> ALert !</h4>
+                </div>
+                <div class="modal-body" id="hapusData">
+                    <form role="form" method="post" action="<?= base_url('admin/pengajuan/hapus_pengajuan') ?>">
+                        <div class="box-body">
+                            <div class="form-group" style="text-align:center">Anda yakin akan menghapus Pengajuan ini ?</label>
+                                <input type="hidden" id=id_ name="id_">
+                                
+                            </div>
+                        </div><!-- /.box-body -->
+                        <div class="modal-footer">
+                            <button type="reset" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                            <button type="submit" class="btn btn-danger" name="delete"><i class="fa fa-check"></i> Hapus</button>
+                        </div>
+                    </form>
+                    <script src="<?php echo base_url(); ?>assets/js/jquery-1.10.0.min.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                        $(document).on("click", "#hapusPer", function() {
+                            var id = $(this).data('id');
+                            var idpeg= $(this).data('idpeg');
+                            $("#hapusData #id_").val(id);
+                           
+                        });
+                    </script>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
   <!-- Print Surat Tugas -->
   <div id="printSurat" class="modal fade" role="dialog">

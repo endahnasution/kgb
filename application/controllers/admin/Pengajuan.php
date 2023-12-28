@@ -74,6 +74,16 @@ class Pengajuan extends MY_Controller
     }
 
 
+    public function hapus_pengajuan()
+    {
+        
+        $id = $this->input->post('id_');
+        $this->Kgb_model->hapus_kgb($id);
+        redirect('admin/pengajuan/',  'refresh');    
+    }
+
+
+
     public function print_kgb()
     {
         $data = konfigurasi('Form Tambah Sarana', "as");
