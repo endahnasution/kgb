@@ -83,11 +83,11 @@
 							<?php
 							echo "<option selected='selected' value=" . $userdata->substansi . ">" . ucwords($userdata->substansi)."</option>";
 							?>
-							<option value="pemeriksaan">Pemeriksaan</option>
-							<option value="pengujian">Pengujian</option>
-							<option value="tu">Tata Usaha</option>
-							<option value="penindakan">Penindakan</option>
-							<option value="infokom">Infokom</option>
+							<option value="Pemeriksaan">Pemeriksaan</option>
+							<option value="Pengujian">Pengujian</option>
+							<option value="Tata Usaha">Tata Usaha</option>
+							<option value="Penindakan">Penindakan</option>
+							<option value="Infokom">Infokom</option>
                     </select>
 							</div>
 						</div>

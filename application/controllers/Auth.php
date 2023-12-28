@@ -36,13 +36,12 @@ class Auth extends MY_Controller
     
      public function updateProfile()
     {
-        $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]|max_length[50]');
+
         $this->form_validation->set_rules('name', 'Nama', 'trim|required|min_length[2]|max_length[50]');
     
 
         $id = $this->session->userdata('id');
         $data = array(
-            'username' => $this->input->post('username'),
             'nama' => $this->input->post('name'),
             'jabatan' => $this->input->post('jabatan'),
             'nip' => $this->input->post('nip'),
