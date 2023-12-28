@@ -35,12 +35,12 @@
 			<div class="tab-content">
 				<div class="active tab-pane" id="settings">
 					<form class="form-horizontal" action="<?php echo base_url('auth/updateProfile') ?>" method="POST" enctype="multipart/form-data">
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label class="col-sm-2 control-label">Username</label>
 							<div class="col-sm-10">
 								<input type="text" class="form-control" placeholder="Username" name="username" value="<?= $userdata->username; ?>">
 							</div>
-						</div>
+						</div> -->
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Nama</label>
 							<div class="col-sm-10">
