@@ -211,10 +211,7 @@ class Auth extends MY_Controller
         $this->form_validation->set_rules('nip', 'NIP', 'trim|required|min_length[1]|max_length[50]');
         $this->form_validation->set_rules('substansi', 'Substansi', 'trim|required');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[5]|max_length[20]');
-        if ($this->form_validation->run() == false) {
-            $this->register();
-        } else {
-           
+        
             $this->Auth_model->reg();
             $this->session->set_flashdata('alert', '<p class="box-msg">
               <div class="info-box alert-success">
@@ -222,12 +219,12 @@ class Auth extends MY_Controller
               <i class="fa fa-check-circle"></i>
               </div>
               <div class="info-box-content" style="font-size:14">
-              <b style="font-size: 20px">SUKSES</b><br>Pendaftaran berhasil, silakan login.</div>
+              <b style="font-size: 20px">SUKSES</b><br>Pendaftaran berhasil, silakan verifikasi akun ke admin.</div>
               </div>
               </p>
             ');
             redirect('auth/login', 'refresh', $data);
-        }
+        
     }
     
     public function login()
