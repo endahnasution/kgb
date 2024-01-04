@@ -86,6 +86,9 @@ class Kgb extends MY_Controller
             'tahun_kerja_baru' => $lastKgb->tahun_kerja_baru + 2,
             'bulan_kerja_baru' => $lastKgb->bulan_kerja_baru,
             'golongan_baru'=> '',
+            'golongan_lama' => $lastKgb->golongan_baru,
+            'pangkat_lama' => $lastKgb->pangkat_baru,
+
             'spmk_baru'=> date_format(date_add(date_create($lastKgb->spmk_baru),date_interval_create_from_date_string("2 years")),"Y-m-d"),
             'status_kgb'=> 'Pengajuan',
             'idPegawai' => $idPegawai
@@ -126,6 +129,24 @@ class Kgb extends MY_Controller
         $idPegawai = $this->input->post('idPegawai');
         $sk_lama = $this->input->post('sk_lama');
 
+        $config['upload_path'] = './assets/uploads/files/kgb';
+        $config['allowed_types'] = 'pdf';
+        $config['file_name'] = 'kgb-'.rand();
+        $config['overwrite'] = true;
+        $config['max_size'] = 0;
+    
+
+        $this->load->library("upload",$config);
+        $this->upload->initialize($config);
+
+
+        if(!$this->upload->do_upload('file_kgb')){
+            echo $this->upload->display_errors();
+        }else{
+            $fd=$this->upload->data();
+            $file=$fd['file_name'];
+        }
+
         $data = array(
             // 'jenisSurat' => $jenis,
             
@@ -141,8 +162,12 @@ class Kgb extends MY_Controller
             'bulan_kerja_lama' => $this->input->post('bulan_lama'),
             'bulan_kerja_baru' => $this->input->post('bulan_baru'),
             'spmk_baru' => $this->input->post('spmk_baru'),
-            'status_kgb'=> 'Diterima',
-            'note_kgb' => 'Ok',
+            'golongan_lama'=> $this->input->post('golongan_lama'),
+            'pangkat_lama'=> $this->input->post('pangkat_lama'),
+            'golongan_baru'=> $this->input->post('golongan_baru'),
+            'pangkat_baru'=> $this->input->post('pangkat_baru'),
+            'file_kgb' => $file,
+            'status_kgb'=> 'Pengajuan Awal',
             'idPegawai' => $idPegawai
 
         );
@@ -271,9 +296,9 @@ class Kgb extends MY_Controller
         $data['tgl_sk_baru'] = $kgbCetak->tgl_sk_baru;        
         $data['nama'] = $kgbCetak->nama;        
         $data['nip'] = $kgbCetak->nip;        
-        $data['pangkat'] = $kgbCetak->pangkat;            
+        $data['pangkat'] = $kgbCetak->pangkat_lama;            
         $data['jabatan'] = $kgbCetak->jabatan;        
-        $data['golongan'] = $kgbCetak->golongan;        
+        $data['golongan'] = $kgbCetak->golongan_lama;        
        $this->load->view('petugas/kgb/print_kgb', $data, FALSE);
       
     

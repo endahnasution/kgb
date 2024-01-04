@@ -24,7 +24,7 @@ public function getPengajuanBaru(){
     $this->db->from('tbl_kgb');
     $this->db->join('tbl_pegawai', 'tbl_kgb.idPegawai = tbl_pegawai.idPegawai',"left");
     $this->db->where('status_kgb', 'Pengajuan')
-    ->or_where('status_kgb', 'Ditolak');
+    ->or_where('status_kgb', 'Ditolak') ->or_where('status_kgb', 'Pengajuan Awal');
     $query = $this->db->get('');
     return $query->result();
 }
@@ -35,7 +35,7 @@ public function countPengajuanBaru(){
   $this->db->from('tbl_kgb');
   $this->db->join('tbl_pegawai', 'tbl_kgb.idPegawai = tbl_pegawai.idPegawai',"left");
   $this->db->where('status_kgb', 'Pengajuan')
-  ->or_where('status_kgb', 'Ditolak');
+  ->or_where('status_kgb', 'Ditolak')->or_where('status_kgb', 'Pengajuan Awal');
   $query = $this->db->get('');
   return $query->num_rows();
 }
@@ -55,13 +55,16 @@ public function updateKgb($data){
      $this->db->set('tgl_sk_baru', $data['tgl_sk_baru']);
      $this->db->set('gapok_baru', $data['gapok_baru']); 
      $this->db->set('status_kgb', $data['status']); 
+     $this->db->set('golongan_baru', $data['golongan_baru']); 
+     $this->db->set('pangkat_baru', $data['pangkat_baru']); 
      $this->db->set('note_kgb', $data['note_kgb']); 
      $this->db->where('idKgb', $data['idKgb']);
      $query = $this->db->update('tbl_kgb');
   }
 
   public function updatePegawai($data){
-    $this->db->set('golongan', $data['golongan']); 
+    $this->db->set('golongan', $data['golongan']);
+    $this->db->set('pangkat', $data['pangkat']); 
 
      $this->db->where('idPegawai', $data['idPegawai']);
      $query = $this->db->update('tbl_pegawai');

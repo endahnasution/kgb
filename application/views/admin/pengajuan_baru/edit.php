@@ -61,6 +61,17 @@
                             </div>
 
                             <div class="form-group row">
+                                <label for="noSurat" class="col-sm-8 col-form-label">Golongan Lama<span class="wajib"> *</span></label></label>
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user-circle-o"></i></span>
+                                        <input type="text" class="form-control" name="golongan_lama" id="golongan_lama" value="<?=  $kgb->golongan_lama?>" readonly required>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
                                 <label for="noSurat" class="col-sm-8 col-form-label">Gaji Pokok Lama<span class="wajib"> *</span></label></label>
                                 <div class="col-sm-12">
                                     <div class="input-group">
@@ -71,16 +82,30 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="noSurat" class="col-sm-8 col-form-label">Gaji Pokok Baru<span class="wajib"> *</span></label></label>
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user-circle-o"></i></span>
-                                        <input type="text" class="form-control" name="gapok_baru" id="gapok_baru" value="<?=  $kgb->gapok_baru?>"  required>
-                                    </div>
-                                </div>
-                            </div>
+            <label for="noSurat" class="col-sm-4 col-form-label">Pangkat Baru<span class="wajib"> *</span></label>
+            <div class="col-sm-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-list"></i></span>
+                <select class="form-control" name="pangkat_baru" id="pangkat_baru"  required>
+                  <option value="<?= $kgb->pangkat_baru ?>"  selected><?= $kgb->pangkat_baru ?> </option>
+                  <option>Pengatur</option>
+                  <option>Pengatur Tk. I</option>
+                  <option>Penata Muda</option>
+                  <option>Penata Muda Tk. I</option>
+                  <option>Penata</option>
+                  <option>Penata Tk. I</option>
+                  <option>Pembina</option>
+                  <option>Pembina Tk. I</option>
+                  <option>Pembina Utama Muda</option>
+                  <option>Pembina Utama Madya</option>
+                  <option>Pembina Utama</option>
+                  <option>-</option>
+                </select>
+              </div>
+            </div>
+          </div>
 
-
+                            
                             
                             <div class="form-group row">
                                 <label for="noSurat" class="col-sm-8 col-form-label">Nomor SK Baru<span class="wajib"> *</span></label></label>
@@ -134,49 +159,50 @@
                             </div>
 
                             <div class="form-group row">
-            <label for="noSurat" class="col-sm-4 col-form-label">Pangkat<span class="wajib"> *</span></label>
+            <label for="noSurat" class="col-sm-4 col-form-label">Pangkat Lama<span class="wajib"> *</span></label>
             <div class="col-sm-12">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-list"></i></span>
-                <select class="form-control" name="jabatan" id="jabatan" readonly required>
-                  <option value="<?echo $kgb->jabatan ?>"  selected><?= $kgb->jabatan ?> </option>
+                <select class="form-control" name="pangkat" id="pangkat" readonly required>
+                  <option value="<?echo $kgb->pangkat_lama ?>"  selected><?= $kgb->pangkat_lama ?> </option>
+                  <option>Pengatur</option>
+                  <option>Pengatur Tk. I</option>
+                  <option>Penata Muda</option>
+                  <option>Penata Muda Tk. I</option>
+                  <option>Penata</option>
+                  <option>Penata Tk. I</option>
+                  <option>Pembina</option>
+                  <option>Pembina Tk. I</option>
+                  <option>Pembina Utama Muda</option>
+                  <option>Pembina Utama Madya</option>
+                  <option>Pembina Utama</option>
                   <option>-</option>
-                  <option>Kepala Balai POM di Batam</option>
-                  <option>Kepala Sub Bagian Tata Usaha</option>
-                  <option>Koordinator Substansi Infokom</option>
-                  <option>Koordinator Substansi Penindakan</option>
-                  <option>Koordinator Substansi Pemeriksaan</option>
-                  <option>Koordinator Substansi Pengujian</option>
-                  <option>PFM Ahli Madya</option>
-                  <option>PFM Ahli Muda</option>
-                  <option>PFM Ahli Pertama</option>
-                  <option>PFM Keahlian</option>
-                  <option>PFM Terampil</option>
-                  <option>PFM Terampil Pelaksana</option>
-                  <option>PFM Terampil Pelaksana Lanjutan</option>
-                  <option>Perencana Ahli Pertama</option>
-                  <option>Pranata Komputer Pelaksana</option>
-                  <option>Analis Kepegawaian Pelaksana Lanjutan</option>
-                  <option>Arsiparis Terampil</option>
-                  <option>Analis Laporan Keuangan</option>
-                  <option>Analis Pengadaan Barang dan Jasa</option>
-                  <option>Bendahara</option>
-                  <option>Pengadministrasi Umum</option>
-                   <option>Tenaga Administrasi</option>
                 </select>
               </div>
             </div>
           </div>
 
+          <div class="form-group row">
+                                <label for="noSurat" class="col-sm-8 col-form-label">Gaji Pokok Baru<span class="wajib"> *</span></label></label>
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user-circle-o"></i></span>
+                                        <input type="text" class="form-control" name="gapok_baru" id="gapok_baru" value="<?=  $kgb->gapok_baru?>"  required>
+                                    </div>
+                                </div>
+                            </div>
+
+        
+
                          
 
                            
                             <div class="form-group row">
-                                <label for="noSurat" class="col-sm-8 col-form-label">Golongan<span class="wajib"> *</span></label></label>
+                                <label for="noSurat" class="col-sm-8 col-form-label">Golongan baru<span class="wajib"> *</span></label></label>
                                 <div class="col-sm-12">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-user-circle-o"></i></span>
-                                        <input type="text" class="form-control" name="golongan" id="golongan" value="<?=  $kgb->golongan?>"  required>
+                                        <input type="text" class="form-control" name="golongan_baru" id="golongan_baru" value="<?=  $kgb->golongan_baru?>"  required>
                                     </div>
                                 </div>
                             </div>

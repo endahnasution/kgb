@@ -67,7 +67,7 @@
                                                     echo "<tr>";
                                                     echo "<td class='dt-center'>" . $row->sk_baru . "</td>";
                                                     echo "<td class='dt-center'>" . $row->tgl_sk_baru . "</td>";
-                                                    if($row->status_kgb == "Pengajuan"){
+                                                    if($row->status_kgb == "Pengajuan" || $row->status_kgb == "Pengajuan Awal" ){
                                                         echo "<td class='dt-center'><span class='label label-primary'>" . $row->status_kgb . "</span></td>";
                                                     }elseif($row->status_kgb == "Ditolak"){
                                                         echo "<td class='dt-center'><span class='label label-danger'>" . $row->status_kgb . "</span></td>";

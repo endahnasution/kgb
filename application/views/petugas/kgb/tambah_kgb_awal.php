@@ -34,41 +34,35 @@
                            
                             <br>
                             <!-- nomor surat -->
+
                             <div class="form-group row">
-            <label for="noSurat" class="col-sm-4 col-form-label">Pangkat<span class="wajib"> *</span></label>
+            <label for="noSurat" class="col-sm-4 col-form-label">Pangkat Lama<span class="wajib"> *</span></label>
             <div class="col-sm-12">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-list"></i></span>
-                <select class="form-control" name="pangkat" id="pangkat"  required>
-                <option>Pilih Pangkat</option>
-                  <option>Kepala Balai POM di Batam</option>
-                  <option>Kepala Sub Bagian Tata Usaha</option>
-                  <option>Koordinator Substansi Infokom</option>
-                  <option>Koordinator Substansi Penindakan</option>
-                  <option>Koordinator Substansi Pemeriksaan</option>
-                  <option>Koordinator Substansi Pengujian</option>
-                  <option>PFM Ahli Madya</option>
-                  <option>PFM Ahli Muda</option>
-                  <option>PFM Ahli Pertama</option>
-                  <option>PFM Keahlian</option>
-                  <option>PFM Terampil</option>
-                  <option>PFM Terampil Pelaksana</option>
-                  <option>PFM Terampil Pelaksana Lanjutan</option>
-                  <option>Perencana Ahli Pertama</option>
-                  <option>Pranata Komputer Pelaksana</option>
-                  <option>Analis Kepegawaian Pelaksana Lanjutan</option>
-                  <option>Arsiparis Terampil</option>
-                  <option>Analis Laporan Keuangan</option>
-                  <option>Analis Pengadaan Barang dan Jasa</option>
-                  <option>Bendahara</option>
-                  <option>Pengadministrasi Umum</option>
-                 <option>Tenaga Administrasi</option>
-                 <option>-</option>
+                <select class="form-control" name="pangkat_lama" id="pangkat_lama"  required>
+                <option>Pilih Pangkat Lama </option>
+                  <option>Pengatur</option>
+                  <option>Pengatur Tk. I</option>
+                  <option>Penata Muda</option>
+                  <option>Penata Muda Tk. I</option>
+                  <option>Penata</option>
+                  <option>Penata Tk. I</option>
+                  <option>Pembina</option>
+                  <option>Pembina Tk. I</option>
+                  <option>Pembina Utama Muda</option>
+                  <option>Pembina Utama Madya</option>
+                  <option>Pembina Utama</option>
+                  <option>-</option>
                 </select>
               </div>
             </div>
           </div>
 
+
+
+                            
+                           
                             <div class="form-group row">
                                 <label for="noSurat" class="col-sm-8 col-form-label">Gaji Pokok Lama <span class="wajib"> *</span></label></label>
                                 <div class="col-sm-12">
@@ -129,6 +123,37 @@
                                 </div>
                             </div>
 
+                            <div class="form-group row">
+                                <label for="noSurat" class="col-sm-8 col-form-label">Golongan Baru<span class="wajib"> *</span></label></label>
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user-circle-o"></i></span>
+                                        <select class="form-control" name="golongan_baru" id="golongan_baru"  required>
+                <option>Pilih Golongan Baru</option>
+                  <option>II c</option>
+                  <option>II d</option>
+                  <option>III a</option>
+                  <option>III b</option>
+                  <option>III c</option>
+                  <option>III d</option>
+                  <option>IV a</option>
+                  <option>IV b</option>
+                  <option>IV c</option>
+                  <option>IV d</option>
+                  <option>IV e </option>
+                  <option>IX</option>
+                </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+                            
+
 
                         </div>
 
@@ -141,7 +166,21 @@
                                 <div class="col-sm-12">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-user-circle-o"></i></span>
-                                        <input type="text" class="form-control" name="golongan_lama" id="golongan_lama"   required>
+                                         <select class="form-control" name="golongan_lama" id="golongan_lama"  required>
+                <option>Pilih Golongan Lama</option>
+                  <option>II c</option>
+                  <option>II d</option>
+                  <option>III a</option>
+                  <option>III b</option>
+                  <option>III c</option>
+                  <option>III d</option>
+                  <option>IV a</option>
+                  <option>IV b</option>
+                  <option>IV c</option>
+                  <option>IV d</option>
+                  <option>IV e </option>
+                  <option>IX</option>
+                </select>
                                     </div>
                                 </div>
                             </div>
@@ -214,12 +253,39 @@
                                 </div>
                             </div>
 
+
                             <div class="form-group row">
-                                <label for="noSurat" class="col-sm-8 col-form-label">Golongan Baru<span class="wajib"> *</span></label></label>
+            <label for="noSurat" class="col-sm-4 col-form-label">Pangkat Baru<span class="wajib"> *</span></label>
+            <div class="col-sm-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-list"></i></span>
+                <select class="form-control" name="pangkat_baru" id="pangkat_baru"  required>
+                <option>Pilih Pangkat Baru </option>
+                  <option>Pengatur</option>
+                  <option>Pengatur Tk. I</option>
+                  <option>Penata Muda</option>
+                  <option>Penata Muda Tk. I</option>
+                  <option>Penata</option>
+                  <option>Penata Tk. I</option>
+                  <option>Pembina</option>
+                  <option>Pembina Tk. I</option>
+                  <option>Pembina Utama Muda</option>
+                  <option>Pembina Utama Madya</option>
+                  <option>Pembina Utama</option>
+                  <option>-</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+                         
+
+                            <div class="form-group row">
+                                <label for="noSurat" class="col-sm-8 col-form-label">Surat KGB <span class="wajib"></span></label></label>
                                 <div class="col-sm-12">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-user-circle-o"></i></span>
-                                        <input type="text" class="form-control" name="golongan_baru" id="golongan_baru"   required>
+                                        <input type="file" class="form-control" name="file_kgb" id="file_kgb    "  >
                                     </div>
                                 </div>
                             </div>

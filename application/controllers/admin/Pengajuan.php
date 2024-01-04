@@ -47,19 +47,26 @@ class Pengajuan extends MY_Controller
             'sk_baru' => $this->input->post('sk_baru'),
             'tgl_sk_baru' =>$this->input->post('tgl_sk_baru'),
             'note_kgb' =>$this->input->post('note_kgb'),
+            'golongan_baru' => $this->input->post('golongan_baru'),
+            'pangkat_baru' => $this->input->post('pangkat_baru'),
             'status' => $this->input->post('status')
             
             );  
         
         $this->Pengajuan_model->updateKgb($dataKgb);
 
-        $dataPegawai = array(
-            'idPegawai' => $this->db->select("*")-> where('idKgb', $idKgb)->get("tbl_kgb")->row()->idPegawai,
-            'golongan' => $this->input->post('golongan'),
-            
-            );  
+        if($this->input->post('status') == "Diterima"){
+            $dataPegawai = array(
+                'idPegawai' => $this->db->select("*")-> where('idKgb', $idKgb)->get("tbl_kgb")->row()->idPegawai,
+                'golongan' => $this->input->post('golongan_baru'),
+                'pangkat' => $this->input->post('pangkat_baru'),
+                
+                );  
+    
+                $this->Pengajuan_model->updatePegawai($dataPegawai);
+        }
 
-            $this->Pengajuan_model->updatePegawai($dataPegawai);
+       
 
         $this->session->set_flashdata('success', 'Data Berhasil Diubah');
 
@@ -105,9 +112,9 @@ class Pengajuan extends MY_Controller
         $data['tgl_sk_baru'] = $kgbCetak->tgl_sk_baru;        
         $data['nama'] = $kgbCetak->nama;        
         $data['nip'] = $kgbCetak->nip;        
-        $data['pangkat'] = $kgbCetak->pangkat;            
+        $data['pangkat'] = $kgbCetak->pangkat_lama;            
         $data['jabatan'] = $kgbCetak->jabatan;        
-        $data['golongan'] = $kgbCetak->golongan;        
+        $data['golongan'] = $kgbCetak->golongan_lama;        
        $this->load->view('admin/pengajuan_selesai/print', $data, FALSE);
       
     

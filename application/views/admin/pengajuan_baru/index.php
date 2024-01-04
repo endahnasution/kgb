@@ -58,7 +58,13 @@
                             echo "<td class='dt-center'>" . $row->nama . "</td>";
                             echo "<td class='dt-center'>" . $row->spmk_baru . "</td>";
                             echo "<td class='dt-center'>" ?>
+                           
                             <a href="<?=site_url('admin/pengajuan/edit_pengajuan/'. $row->idKgb)?>" class="btn btn-success btn-sm" data-tooltip="tooltip" title="Edit" id="editSur" ><i class="fa fa-edit"></i></a>
+
+                            <?php if($row->status_kgb == 'Pengajuan Awal'){ ?>
+                              <a href="../../assets/uploads/files/kgb/<?=$row->file_kgb?>" target="_blank" class="btn btn-primary btn-sm" data-tooltip="tooltip" title="Print" id="printSur" data-toggle="modal" data-target="#" data-id="<?= $row->idKgb ?>">
+                                                    <i class="fa fa-eye"></i></a>
+                            <?php }?>
 
                             <a href="#" data-tooltip="tooltip" title="Hapus" class="btn btn-danger btn-sm" id="hapusPer" data-id="<?= $row->idKgb ?>" data-toggle="modal" data-target="#hapusLhk"><i class="fa fa-trash"></i></a>
 

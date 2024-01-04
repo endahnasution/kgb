@@ -184,7 +184,7 @@ header("Content-Disposition: attachment; Filename=FileKgb-".$filename)
 					<p align="left">:</p>
 				</th>
                 <th width="78%" class="dua">
-					<p align="left"><?php echo $pangkat.",".$golongan?></p>
+					<p align="left"><?php echo $pangkat."/".$golongan?></p>
 				</th>
                
 			</tr>

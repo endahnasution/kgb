@@ -5,6 +5,7 @@
       <h4>Hi <?= $userdata->nama; ?> , Selamat Datang di Aplikasi E-KGB BPOM Batam!</h4>
       Elektronik Monitoring dan Pembuatan Surat KGB
       <br>
+      <b>Bagi Pengguna baru</b>, harap melengkapi identitas pada menu profile
       <br>
       <?php
 					$latest_spmk= $this->db->select("*")->limit(1)->order_by('idKgb',"DESC")-> where('idPegawai', $userdata->idPegawai) ->get("tbl_kgb")->row();

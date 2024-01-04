@@ -334,9 +334,9 @@
                     <h4 class="modal-title"><i class="icon fa fa-ban"></i> ALert !</h4>
                 </div>
                 <div class="modal-body" id=panelSur>
-                    <form role="form" method="post" action="<?= base_url('petugas/kgb/print_kgb') ?>">
+                    <form role="form" method="post" action="<?= base_url('admin/pengajuan/print_kgb') ?>">
                         <div class="box-body">
-                            <div class="form-group" style="text-align:center">Anda Akan Mencetak LHK</label>
+                            <div class="form-group" style="text-align:center">Anda Akan Mencetak File KGB</label>
                                 <input type="hidden" id="idKgb" name="idKgb">
 
                             </div>
