@@ -23,7 +23,7 @@
 				</a>
 				<div ></div>
 				<ul id="notifications" class="dropdown-menu">
-					<li class="header"><a href="<?php echo base_url('admin/pengajuan/') ?>">Terdapat <b><?php echo $latest_spmk ?></b> Pengajuan KGB </li></a>
+					<li class="header"><a href="<?php echo base_url('admin/pengajuan/pengajuan_baru/') ?>">Terdapat <b><?php echo $latest_spmk ?></b> Pengajuan KGB </li></a>
 					<li>
 						<!-- inner menu: contains the actual data -->
 						<ul class="menu">
